@@ -111,10 +111,25 @@ img {
 }
 
 .brand {
-  width: 156px;
-  flex: 0 0 auto;
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 18px;
+  background: rgba(8, 8, 8, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(140, 255, 0, 0.05),
+    0 0 28px rgba(140, 255, 0, 0.08);
 }
-.brand img { width: 100%; }
+
+.brand img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
 
 .desktop-nav {
   display: flex;
