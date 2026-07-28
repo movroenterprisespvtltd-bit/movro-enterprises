@@ -114,21 +114,52 @@ img {
   width: auto;
   display: inline-flex;
   align-items: center;
-  padding: 8px 14px;
+  gap: 12px;
+  padding: 8px 12px 8px 8px;
   border-radius: 18px;
-  background: rgba(8, 8, 8, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(8, 8, 8, 0.76);
+  border: 1px solid rgba(255,255,255,0.08);
   backdrop-filter: blur(12px);
   box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.35),
-    0 0 0 1px rgba(140, 255, 0, 0.05),
-    0 0 28px rgba(140, 255, 0, 0.08);
+    0 10px 30px rgba(0,0,0,0.35),
+    0 0 24px rgba(140,255,0,0.08);
 }
 
-.brand img {
-  width: 120px;
+.brand-mark {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+  border: 1px solid rgba(140,255,0,0.18);
+  box-shadow: inset 0 0 20px rgba(140,255,0,0.04);
+  overflow: hidden;
+}
+
+.brand-mark img {
+  width: 74%;
   height: auto;
-  display: block;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-text strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.brand-text small {
+  margin-top: 4px;
+  font-size: 9px;
+  letter-spacing: 0.20em;
+  color: #8cff00;
 }
 
 .desktop-nav {
